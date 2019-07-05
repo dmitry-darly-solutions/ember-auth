@@ -1,0 +1,84 @@
+.loading {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.page-header {
+  margin-top: 0;
+}
+
+.app-content {
+  height: 100vh;
+}
+
+.page-login {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: -webkit-linear-gradient(
+    to bottom,
+    #185a9d,
+    #43cea2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #185a9d,
+    #43cea2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.login-btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-btn {
+  color: black;
+  margin-bottom: 15px;
+  background-color: #ffc312;
+}
+
+.login-btn:hover {
+  background-color: white;
+}
+
+.page-home {
+  height: 100%;
+  background: #42275a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #734b6d,
+    #42275a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #734b6d,
+    #42275a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.page-home .media {
+  background: #fff;
+  padding: 20px;
+}
+
+.page-home .media .btn-default {
+  background: #6b456a;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+}
