@@ -20,7 +20,25 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+
+    contentSecurityPolicy: {
+      'style-src': "'self' 'unsafe-inline'"
+    },
+
+    browserify: {
+      tests: true
+    },
+
+    apiHost: 'http://localhost:4200',
+
+    googleClientID: '694766332436-1g5bakjoo5flkfpv3t2mfsch9ghg7ggd.apps.googleusercontent.com',
+
+    fastboot: {
+      hostWhitelist: [/^localhost:\d+$/]
+    },
+
+    esaVersion: require('../package.json').version,
   };
 
   if (environment === 'development') {
